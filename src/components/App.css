@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #131212;
+    background-color: #131111;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -81,4 +81,16 @@ body{
 
 .app button:hover {
     box-shadow: 0px 5px  15px 5px rgba(0, 0, 0, 0.08);
+}
+
+@media only screen and (max-width: 600px){
+    .app{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    #logo img{
+        width: 20%;
+    }
 }
