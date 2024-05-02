@@ -35,19 +35,19 @@ export const Converter = () => {
     return(
         <div className="app">
         <div id="logo">
-            <h2>MP3 DOWNLOADER</h2> 
+            <h2>YT2MP3</h2> 
         </div>
 
         <div id="body">
             <input 
                 type="text"
-                placeholder="YouTube link here"
+                placeholder="Pega aquí el link de YouTube"
                 value={link}
                 onChange={(e) => {
                     setLink(e.target.value);
                 }} 
                 />
-            <span>It might take a moment to convert your video</span>
+            <span>Podríamos tardar un momento en convertir tu video a mp3</span>
         </div>
         <button
             onClick={() => {
@@ -56,7 +56,7 @@ export const Converter = () => {
                     setId(text);
                 }
             }}
-        >Download</button>
+        >Descargar</button>
         </div>
     )
 }
